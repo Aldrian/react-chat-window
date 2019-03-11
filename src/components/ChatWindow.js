@@ -25,7 +25,7 @@ class ChatWindow extends Component {
         "opened"
       ];
       return (
-        <div className={classList.join(' ')}>
+        <div className={classList.join(' ')} style={{height: this.props.height}}>
           <Header
             teamName={this.props.agentProfile.teamName}
             imageUrl={this.props.agentProfile.imageUrl}
