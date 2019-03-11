@@ -59,7 +59,8 @@ var Chat = function (_Component) {
       onFilesSelected: this.props.onFilesSelected,
       agentProfile: this.props.agentProfile,
       onClose: this.handleClick.bind(this),
-      showEmoji: this.props.showEmoji
+      showEmoji: this.props.showEmoji,
+      height: this.props.height
     });
   };
 

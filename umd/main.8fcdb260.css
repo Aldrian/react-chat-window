@@ -1,5 +1,5 @@
 /*!
- * react-chat-window v1.1.1
+ * react-chat-window v1.1.2
  * MIT Licensed
  */
 .sc-emoji-picker {
@@ -347,7 +347,7 @@
 
 .sc-message--content.sent .sc-message--text {
   color: white;
-  background-color: #4e8cff;
+  background-color: #fca95e;
   max-width: calc(100% - 120px);
   word-wrap: break-word;
 }

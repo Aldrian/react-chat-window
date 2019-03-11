@@ -1,5 +1,5 @@
 /*!
- * react-chat-window v1.1.1
+ * react-chat-window v1.1.2
  * MIT Licensed
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -284,7 +284,7 @@ exports.default = Linkify;
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "chat-icon.e0d2b748.svg";
+module.exports = __webpack_require__.p + "chat-icon.2a512951.svg";
 
 /***/ }),
 /* 4 */
@@ -6353,7 +6353,8 @@ var Chat_Chat = function (_Component) {
       onFilesSelected: this.props.onFilesSelected,
       agentProfile: this.props.agentProfile,
       onClose: this.handleClick.bind(this),
-      showEmoji: this.props.showEmoji
+      showEmoji: this.props.showEmoji,
+      height: this.props.height
     });
   };
 
