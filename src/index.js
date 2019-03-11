@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './styles';
-import Launcher from './components/Launcher';
+import Chat from './components/Chat';
 
-
-export { Launcher };
+export { Chat };

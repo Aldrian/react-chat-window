@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
-import {Launcher} from '../../src'
+import {Chat} from '../../src'
 import messageHistory from './messageHistory';
 import TestArea from './TestArea';
 import Header from './Header';
@@ -65,10 +65,7 @@ class Demo extends Component {
   render() {
     return <div>
       <Header />
-      <TestArea
-        onMessage={this._sendMessage.bind(this)}
-      />
-      <Launcher
+      <Chat
         agentProfile={{
           teamName: 'react-chat-window',
           imageUrl: 'https://a.slack-edge.com/66f9/img/avatars-teams/ava_0001-34.png'

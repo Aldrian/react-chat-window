@@ -22,7 +22,7 @@ class ChatWindow extends Component {
       let messageList = this.props.messageList || [];
       let classList = [
         "sc-chat-window",
-        (this.props.isOpen ? "opened" : "closed")
+        "opened"
       ];
       return (
         <div className={classList.join(' ')}>
@@ -47,7 +47,6 @@ class ChatWindow extends Component {
 
 ChatWindow.propTypes = {
   agentProfile: PropTypes.object.isRequired,
-  isOpen: PropTypes.bool.isRequired,
   onClose: PropTypes.func.isRequired,
   onFilesSelected: PropTypes.func,
   onUserInputSubmit: PropTypes.func.isRequired,

@@ -104,28 +104,6 @@ class UserInput extends Component {
     </PopupWindow>
   )
 
-  _renderSendOrFileIcon() {
-    if (this.state.inputHasText) {
-      return (
-        <div className="sc-user-input--button">
-          <SendIcon onClick={this._submitText.bind(this)} />
-        </div>
-      )
-    }
-    return (
-      <div className="sc-user-input--button">
-        <FileIcon onClick={this._showFilePicker.bind(this)} />
-        <input
-          type="file"
-          name="files[]"
-          multiple
-          ref={(e) => { this._fileUploadButton = e; }}
-          onChange={this._onFilesSelected.bind(this)}
-        />
-      </div>
-    )
-  }
-
   render() {
     const { emojiPickerIsOpen, inputActive } = this.state;
     return (
@@ -139,7 +117,7 @@ class UserInput extends Component {
           onKeyDown={this.handleKeyDown.bind(this)}
           onKeyUp={this.handleKeyUp.bind(this)}
           contentEditable="true"
-          placeholder="Write a reply..."
+          placeholder="Write a message..."
           className="sc-user-input--text"
         >
         </div>
@@ -152,7 +130,9 @@ class UserInput extends Component {
               tooltip={this._renderEmojiPopup()}
             />}
           </div>
-          {this._renderSendOrFileIcon()}
+          <div className="sc-user-input--button">
+            <SendIcon onClick={this._submitText.bind(this)} />
+          </div>
         </div>
       </form>
     );
