@@ -32,7 +32,7 @@ var ChatWindow = function (_Component) {
     var classList = ["sc-chat-window", "opened"];
     return React.createElement(
       'div',
-      { className: classList.join(' ') },
+      { className: classList.join(' '), style: { height: this.props.height } },
       React.createElement(Header, {
         teamName: this.props.agentProfile.teamName,
         imageUrl: this.props.agentProfile.imageUrl,

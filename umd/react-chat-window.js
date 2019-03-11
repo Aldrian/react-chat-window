@@ -6253,7 +6253,7 @@ var ChatWindow_ChatWindow = function (_Component) {
     var classList = ["sc-chat-window", "opened"];
     return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(
       'div',
-      { className: classList.join(' ') },
+      { className: classList.join(' '), style: { height: this.props.height } },
       external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Header, {
         teamName: this.props.agentProfile.teamName,
         imageUrl: this.props.agentProfile.imageUrl,
